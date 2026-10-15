@@ -29,5 +29,17 @@ public class ListaSimple {
             cabeza = t;
         }
     }
+
+    public void recorrer() {
+        Nodo actual = cabeza;
+
+        while (actual != null) {
+            System.out.println(actual.getValor());
+            actual = actual.getSig();
+        }
+    }
 }
+
+
+
 
